@@ -1,0 +1,68 @@
+{
+  "ai-reconcile-1": {
+    "jkt": "5tMZm1nM0jQHv9qvNzz0k-i6rXD4UZIJGjkQsPF8ans",
+    "jwk": {
+      "crv": "Ed25519",
+      "d": "MFTGM-J9Twg45_ok3jHuJk_sFLysgw0HNEGc1wnwnN4",
+      "kid": "ai-reconcile-1",
+      "kty": "OKP",
+      "x": "QSTZ6aocAU36t8z3ueSYsq9xilLKvwOj_gXVmGPm6j4"
+    },
+    "role": "instanta reconcile-2: cheia din cnf.jkt al frunzei si din cnf.jwk al WIT-ului; semneaza cererea"
+  },
+  "ai-treasury-1": {
+    "jkt": "N8aKNGo4023KqM-puSWZHXDMtol87u6100ZO-8PGadw",
+    "jwk": {
+      "crv": "Ed25519",
+      "d": "yTBD7RFAh1qsOMrxyHtot_uTqgEvts0G0CnYHWNOQhU",
+      "kid": "ai-treasury-1",
+      "kty": "OKP",
+      "x": "Bl0XkpKejHz64afcAwC8rCNbbkHsl6dz0iDoBe6KJnM"
+    },
+    "role": "instanta payments-7: cheia din cnf.jkt al radacinii; semneaza mandatul subdelegat"
+  },
+  "as-1": {
+    "jkt": "__imVWcQLM0Eu_zeFJP4gPy-cT2GHpxsDIc3Q6BB9P0",
+    "jwk": {
+      "crv": "Ed25519",
+      "d": "92OjrnbvMv8joV5RebopOgJXW_3LIytf_dGljpMD_vo",
+      "kid": "as-1",
+      "kty": "OKP",
+      "x": "Wr4AKjhmZuhLGsx3UT_k9iO-DAHt-0MJ-Qb9BLPv6Ds"
+    },
+    "role": "authority_source: semneaza Authority Assertion"
+  },
+  "mi-1": {
+    "jkt": "m1L1fJ7hE4J3T5ICutV1puXJmaTOumHGmilPJ0Eq1eg",
+    "jwk": {
+      "crv": "Ed25519",
+      "d": "J7z5TIgK5rk465HJWspDPv3EU8MVOx4zKnvQxNujR2I",
+      "kid": "mi-1",
+      "kty": "OKP",
+      "x": "XUcsEPKUfKayvcEcGMmx-C6mnnhhda3FtGl5ah0-gSc"
+    },
+    "role": "mandate_issuer: semneaza mandatul radacina"
+  },
+  "op-1": {
+    "jkt": "T3rk4eVrInQUEZKVFF5lnJEVRXMFAEDP9EW9GZmLZPY",
+    "jwk": {
+      "crv": "Ed25519",
+      "d": "MwY0weUZSCKZ_DKeYlxyxhfWshEMMZxfxn8ZGWV_K1s",
+      "kid": "op-1",
+      "kty": "OKP",
+      "x": "_KC-Ha68Cl7hqsjWFrPNggCCwJfhbrUPWlFkcxzFF9c"
+    },
+    "role": "operator: semneaza WIT-urile"
+  },
+  "sl-1": {
+    "jkt": "nQMFpQx_-ORFbLEf-liXJQJ8zU2G9xawnwcnwtddhpE",
+    "jwk": {
+      "crv": "Ed25519",
+      "d": "9JMpNroosKofIVllCvtr322sa2BGmAWQBWGPo3w6hlk",
+      "kid": "sl-1",
+      "kty": "OKP",
+      "x": "zckUdFU0bMcRlzoq56JiR4RxzLZ2lPCzcRk0MKobnEU"
+    },
+    "role": "status_issuer: semneaza Status List Tokens, doar in cazurile care folosesc starea"
+  }
+}
