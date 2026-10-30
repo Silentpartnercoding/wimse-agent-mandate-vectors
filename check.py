@@ -581,6 +581,13 @@ def validate(vdir, cdir):
                     obls = []
                     for ci, c in enumerate(perm.get("constraints", [])):
                         if c["pred"] == "sum_max":
+                            if root is None:
+                                # The budget is scoped to the root's jti. With no root
+                                # reached (chain_broken) there is nothing to scope it to,
+                                # and the result is already invalid, so no sum_max
+                                # Obligation is emitted for this alternative.
+                                notes.append(f"perm {idx}: sum_max Obligation omitted, no root reached")
+                                continue
                             _, amt = resolve(c["ptr"], req)
                             obls.append({"type": "sum_max", "constraint": ci, "root": root.payload["jti"],
                                          "budget": c["budget"], "period": c["period"],

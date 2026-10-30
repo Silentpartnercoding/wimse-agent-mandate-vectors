@@ -42,7 +42,8 @@ cases/<case>/
   expected-result.json        the Validation Result (Section 9.6)
 generate.py           regenerates every case file from keys/chei.json and profile/profil.json
 check.py              independent checker
-tests/                runs check.py and confirms byte-identical regeneration
+tests/                runs check.py, confirms byte-identical regeneration, and checks that a
+                      damaged root mandate gives an invalid result instead of an error
 ```
 
 ## Keys
